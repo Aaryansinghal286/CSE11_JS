@@ -59,10 +59,43 @@ for(i=0;i<3;i++){
 }
 
 
-var count;
-document.write("Starting Loop" +"<br>");
-for(count=0;count<=5;count++){
-    document.write("Current Count" + count);
-    document.write("<br>");
+// var count;
+// document.write("Starting Loop" +"<br>");
+// for(count=0;count<=5;count++){
+//     document.write("Current Count" + count);
+//     document.write("<br>");
+// }
+// document.write("Loop Ended");
+
+
+// var count=0;
+// document.write("Starting Loop" + "<br>");
+// while(count<10){
+//     document.write("Current Count: " + count + "<br>");
+//     count++;
+// }
+// document.write("Loop stopped");
+
+
+var grade="0";
+switch(grade){
+    case "A":
+        console.log("Excellent");
+        break;
+    case "B":
+        console.log("Good");
+        break;
+    case "C":
+        console.log("Fair");
+        break;
+    case "D":
+        console.log("Poor");
+        break;
+    case "F":
+        console.log("Fail");
+        break;
+    default:
+        console.log("Invalid Grade");
 }
-document.write("Loop Ended");
+
+
