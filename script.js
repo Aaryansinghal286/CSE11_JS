@@ -145,4 +145,4 @@
 //JSON
 // member[0].powers[2]
 
-
+let text='["Employees";['+'{"Firstname":"John","Lastname":"Doe"},'+'{"Firstname":"Anna","Lastname":"Smith"},'+'{"Firstname":"Peter","Lastname":"Jones"}'+']]';
