@@ -32,6 +32,50 @@ const { createElement } = require("react");
 //    alert("Done");
 // }
 
-const head=document.createElement("h2");
-const body=document.getElementsByTagName("body");
-body[0].appendChild(head);
+// const head=document.createElement("h2");
+// const body=document.getElementsByTagName("body");
+// body[0].appendChild(head);
+
+let promise =new Promise((resolve,reject)=>{
+    let success=true;
+    if(success){
+        resolve("data Loaded");
+    } else {
+        reject("Error Occured");
+    }
+});
+promise.then((message)=>{
+    console.log(message);
+})
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+// .then((response)=>{return response.json();})
+// .then((data)=>{console.log(data);})
+// .catch((error)=>{console.log(error);})
+
+
+// try{    
+//     var x=y+10;
+// }
+// catch(error){
+//     console.log("Error Occured");
+// }
+
+localStorage.setItem("name","Aaryan");
+
+//retrieving data
+
+let name= localStorage.getItem("name");
+console.log(name);
+
+// remove item
+localStorage.removeItem("name");
+
+// store data
+
+let user={name:"Aaryan",age:20,}
+localStorage.setItem("user",JSON.stringify(user));
+
+// retrieve data
+let userData= localStorage.getItem("user");
+console.log(JSON.parse(userData));
